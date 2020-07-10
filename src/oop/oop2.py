@@ -31,14 +31,13 @@ class Motorcycle(GroundVehicle):
 # TODO
 
 vehicles = [
-    GroundVehicle(4),
-    GroundVehicle(4),
-    Motorcycle(2),
-    GroundVehicle(4),
-    Motorcycle(2),
+    GroundVehicle(),
+    GroundVehicle(),
+    Motorcycle(),
+    GroundVehicle(),
+    Motorcycle(),
 ]
 
 # Go through the vehicles list and print the result of calling drive() on each.
-for v in vehicles:
-    vehicles.drive()
+
 # TODO

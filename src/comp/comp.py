@@ -44,7 +44,7 @@ print(c)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
 print("Ages plus 10:")
-d = [humans.name for humans in humans if humans.age >= 10]
+d = [humans.age + 10 for humans in humans]
 print(d)
 
 # Write a list comprehension that creates a list of strings which are the name
@@ -57,7 +57,7 @@ print(e)
 # age, for example ("David", 31), for everyone between the ages of 27 and 32,
 # inclusive.
 print("Names and ages between 27 and 32:")
-f = [tuple(humans.name + ', ' + str(humans.age) for humans in humans if 27 <= humans.age <= 32)]
+f = [tuple(map(str, humans.name.split(', '))) for humans in humans if 27 <= humans.age <= 32]
 print(f)
 
 # Write a list comprehension that creates a list of new Humans like the old
@@ -71,5 +71,5 @@ print(g)
 print("Square root of ages:")
 import math
 
-h = [math.isqrt(humans.age) for humans in humans]
+h = [math.sqrt(humans.age) for humans in humans]
 print(h)

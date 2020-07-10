@@ -43,16 +43,16 @@ class Motorcycle(GroundVehicle):
 
 # Flight Vehicles
 
-class FlightVehicles(Vehicle):
+class FlightVehicle(Vehicle):
     pass
 
 
-class Airplane(FlightVehicles):
+class Airplane(FlightVehicle):
     pass
 
 
 # Starship
 
 
-class Starship(FlightVehicles):
+class Starship(FlightVehicle):
     pass
